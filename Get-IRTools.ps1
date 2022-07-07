@@ -76,7 +76,7 @@ choco install winscp -y
 choco install ghidra -y
 New-Item -ItemType SymbolicLink -Path "$HOME\Desktop" -Name "ghidra" -Value "$env:ProgramData\chocolatey\lib\ghidra\tools"
 choco install hashmyfiles -y
-New-Item -ItemType SymbolicLink -Path "$HOME\Desktop" -Name "PeStudio" -Value "$env:ProgramData\chocolatey\lib\hashmyfiles\hashmyfiles.exe"
+New-Item -ItemType SymbolicLink -Path "$HOME\Desktop" -Name "HashMyFiles" -Value "$env:ProgramData\chocolatey\lib\hashmyfiles\hashmyfiles.exe"
 choco install pestudio -y --ignore-checksum
 New-Item -ItemType SymbolicLink -Path "$HOME\Desktop" -Name "PeStudio" -Value "$env:ProgramData\chocolatey\lib\PeStudio\tools\pestudio\pestudio.exe"
 choco install x64dbg.portable -y
