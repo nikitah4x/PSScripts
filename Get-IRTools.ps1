@@ -74,11 +74,16 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 choco upgrade chocolatey
 choco install winscp -y
 choco install ghidra -y
+New-Item -ItemType SymbolicLink -Path "$HOME\Desktop" -Name "ghidra" -Value "$env:ProgramData\chocolatey\lib\ghidra\tools"
 choco install hashmyfiles -y
+New-Item -ItemType SymbolicLink -Path "$HOME\Desktop" -Name "PeStudio" -Value "$env:ProgramData\chocolatey\lib\hashmyfiles\hashmyfiles.exe"
 choco install pestudio -y --ignore-checksum
+New-Item -ItemType SymbolicLink -Path "$HOME\Desktop" -Name "PeStudio" -Value "$env:ProgramData\chocolatey\lib\PeStudio\tools\pestudio\pestudio.exe"
 choco install x64dbg.portable -y
+New-Item -ItemType SymbolicLink -Path "$HOME\Desktop" -Name "x64Dbg" -Value "$env:ProgramData\chocolatey\lib\x64db.portable\tools\release"
 choco install ida-free -y
 choco install hxd -y
+New-Item -ItemType SymbolicLink -Path "$HOME\Desktop" -Name "HxD" -Value "$Env:Programfiles\HxD\HxD.exe"
 choco install python3 -y
 choco install volatility -y
 #Endregion
