@@ -36,7 +36,7 @@ try {
 } catch {
     Write-Host $_.Exception.Message -ForegroundColor Red
 }
-& $ZimmermanToolsPS -Dest $ZimmermanTools
+& $ZimmermanToolsPS -Dest $DFIRTools
 #Endregion
 
 #Region DownloadPowershellScripts
