@@ -32,7 +32,7 @@ try {
 #Region Get-ZimmermanTools
 try {
     Invoke-WebRequest -Uri "https://f001.backblazeb2.com/file/EricZimmermanTools/Get-ZimmermanTools.zip" -OutFile $DownloadPath\Get-ZimmermanTools.zip
-    Expand-Archive -LiteralPath $DownloadPath\Get-ZimmermanTools.zip -DestinationPath $DFIRTools
+    Expand-Archive -LiteralPath $DownloadPath\Get-ZimmermanTools.zip -DestinationPath $ZimmermanTools
 } catch {
     Write-Host $_.Exception.Message -ForegroundColor Red
 }
@@ -75,7 +75,7 @@ choco upgrade chocolatey
 choco install winscp -y
 choco install ghidra -y
 choco install hashmyfiles -y
-choco install pestudio -y
+choco install pestudio -y --ignore-checksum
 choco install x64dbg.portable -y
 choco install ida-free -y
 choco install hxd -y
