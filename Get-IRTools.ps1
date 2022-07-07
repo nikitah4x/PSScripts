@@ -87,6 +87,8 @@ New-Item -ItemType SymbolicLink -Path "$HOME\Desktop" -Name "HxD" -Value "$Env:P
 choco install python3 -y
 choco install volatility -y
 New-Item -ItemType SymbolicLink -Path "$HOME\Desktop" -Name "Volatility" -Value "$env:ProgramData\chocolatey\lib\volatility\tools\volatility_2.6_win64_standalone"
+choco install sysinternals -y
+New-Item -ItemType SymbolicLink -Path "$HOME\Desktop" -Name "SysinternalTools" -Value "$env:ProgramData\chocolatey\lib\sysinternals\tools"
 #Endregion
 
 #Region DoneArt
